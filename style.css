@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400;500&display=swap');
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	top: 0;
+	bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+	margin: 0;
+	padding: 0;
+	margin-block-start: 0;
+	margin-block-end: 0;
+	margin-inline-start: 0;
+	margin-inline-end: 0;
+	padding-block-start: 0;
+	padding-block-end: 0;
+	padding-inline-start: 0;
+	padding-inline-end: 0;
+	vertical-align: top;
+}
+
+a,
+a:visited {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+li {
+	list-style: none;
+}
+
+button {
+	border: none;
+	background-color: transparent;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+div[class*="ibg"] {
+	position: relative;
+}
+
+div[class*="ibg"] img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+
+div[class*="ibg_contain"] img {
+	object-fit: contain;
+}
+
+body {
+	font-family: 'Tektur', sans-serif;
+	font-size: 24px;
+	position: relative;
+}
+
+div[class*="container"] {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+}
+
+@media(max-width: 677px) {
+	div[class*="container"] {
+		flex-wrap: wrap;
+		gap: 0px;
+		padding: 20px;
+	}
+}
+
+.main__title {
+	font-weight: 500;
+	font-size: 42px;
+}
+
+.main__content,
+.main__game {
+	flex: 0 1 50%;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+@media(max-width: 677px) {
+
+	.main__content,
+	.main__game {
+		flex: 1 1 50%;
+	}
+}
+
+.main__keyword {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+}
+
+.main__button,
+.button-modal {
+	font-family: 'Tektur', sans-serif;
+	width: 140px;
+	height: 40px;
+	font-weight: 500;
+	font-size: 24px;
+	border: 1px solid black;
+	box-shadow: 2px 2px black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.letter {
+	width: 60px;
+	height: 60px;
+	font-weight: 500;
+	font-size: 24px;
+	padding: 20px;
+	border: 1px solid black;
+	box-shadow: 2px 2px black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+.letter-block {
+	height: 40px;
+	font-weight: 500;
+	font-size: 24px;
+	border-bottom: 2px solid black;
+	margin-right: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.black-cover {
+	position: absolute;
+	inset: 0;
+	background-color: rgb(0, 0, 0, 50%);
+	width: 100%;
+	height: 100%;
+}
+
+.modal {
+	position: fixed;
+	width: 70%;
+	height: 70%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 24px;
+	padding: 20px;
+	text-align: center;
+}
+
+.button-modal {
+	max-width: 250px;
+	width:100%;
+}
